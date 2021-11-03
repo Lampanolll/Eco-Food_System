@@ -30,8 +30,13 @@
             </div>
 
             <div>
-                <x-jet-label for="companyname" value="{{ __('Restaurant Name') }}" />
-                <x-jet-input id="companyname" class="block mt-1 w-full" type="text" name="companyname" :value="old('companyname')" required autofocus autocomplete="companyname" />
+                <x-jet-label for="district" value="{{ __('District') }}" />
+                <x-jet-input id="district" class="block mt-1 w-full" type="text" name="district" :value="old('district')" required autofocus autocomplete="district" />
+            </div>
+
+            <div>
+                <x-jet-label for="restaurantname" value="{{ __('Restaurant Name') }}" />
+                <x-jet-input id="restaurantname" class="block mt-1 w-full" type="text" name="restaurantname" :value="old('restaurantname')" required autofocus autocomplete="restaurantname" />
             </div>
 
             <div class="mt-4">

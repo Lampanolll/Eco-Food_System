@@ -73,7 +73,7 @@
 
   @include('eco.dash')
   @include('eco.welcome')
-  @include('eco.comp')
+  @include('eco.company')
   @include('eco.news')
   @include('eco.footer')
 

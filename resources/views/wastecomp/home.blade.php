@@ -70,7 +70,7 @@
     </nav>
   </header>
 
-  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg-image-bg.jpg);">
+  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/fdcomp.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
         <span class="subhead">Food Waste Management System</span>
@@ -80,92 +80,7 @@
     </div>
   </div>
 
-  <div class="page-section">
-    <div class="container">
-      <h1 class="text-center mb-5 wow fadeInUp">Available Food Waste Company</h1>
-
-      <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-              <p class="text-xl mb-0">Food Waste Company 1</p>
-              <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 2</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 3</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 4</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 5</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- .page-section -->
-
+  
   
 
    <!-- .page-section -->
@@ -178,14 +93,14 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Food Waste Problem</a>
+                <a href="#">Food Waste Problem 1</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
+                <img src="../assets/img/news/news1.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem 1</a></h5>
             </div>
           </div>
         </div>
@@ -193,14 +108,14 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Food Waste Problem</a>
+                <a href="#">Food Waste Problem 2</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
+                <img src="../assets/img/news/news2.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem 2</a></h5>
             </div>
           </div>
         </div>
@@ -208,14 +123,14 @@
           <div class="card-blog">
             <div class="header">
               <div class="post-category">
-                <a href="#">Food Waste Problem</a>
+                <a href="#">Food Waste Problem 3</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
+                <img src="../assets/img/news/news3.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem 3</a></h5>
             </div>
           </div>
         </div>

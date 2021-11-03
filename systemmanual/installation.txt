@@ -1,0 +1,15 @@
+How to install System
+
+Step 1 - Extract zip to xampp
+Step 2 - go to folder cmd
+Step 3 - composer install
+Step 4 - npm install
+Step 5 - copy .env.example .env
+Step 6 - php artisan key:generate
+Step 7 - go to localhost/phpmyadmin
+Step 8 - create database name foodwaste_db
+Step 9 - import sql file
+Step 10 - go to .env file change database name to foodwaste_db
+Step 11 - php artisan migrate
+Step 12 - php artisan db:seed
+Step 13 - php artisan serve

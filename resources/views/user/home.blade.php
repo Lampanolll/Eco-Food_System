@@ -47,7 +47,11 @@
 
             @if (Route::has('login'))
             @auth
-                
+            
+            <li class="nav-item">
+              <a class="nav-link" style="background-color:green; color: white" href="{{url('requestbooking')}}">Pick-up Request</a>
+            </li>
+
             <x-app-layout>
             </x-app-layout>
                 
@@ -70,7 +74,21 @@
     </nav>
   </header>
 
-  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/bg-image-bg.jpg);">
+  @if (session()->has('message'))
+
+  <div class="alert alert-success">
+
+    <button type="button" class="close" data-dismiss="alert">
+      x
+    </button>
+
+    {{session()->get('message')}}
+
+  </div>
+    
+  @endif
+
+  <div class="page-hero bg-image overlay-dark" style="background-image: url(../assets/img/fdcomp.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
         <span class="subhead">Food Waste Management System</span>
@@ -80,194 +98,13 @@
     </div>
   </div>
 
-  <div class="page-section">
-    <div class="container">
-      <h1 class="text-center mb-5 wow fadeInUp">Available Food Waste Company</h1>
+  @include('user.company')
+  @include('user.book')
+  @include('user.news')
+  
+  
 
-      <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-              <p class="text-xl mb-0">Food Waste Company 1</p>
-              <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 2</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 3</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 4</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="card-doctor">
-            <div class="header">
-              <img src="../assets/img/picture.png" alt="">
-              <div class="meta">
-                <a href="#"><span class="mai-call"></span></a>
-                <a href="#"><span class="mai-logo-whatsapp"></span></a>
-              </div>
-            </div>
-            <div class="body">
-                <p class="text-xl mb-0">Food Waste Company 5</p>
-                <span class="text-sm text-grey">Ratings & Reviews</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- .page-section -->
-
-  <div class="page-section">
-    <div class="container">
-      <h1 class="text-center wow fadeInUp">Make an Appointment</h1>
-
-      <form class="main-form">
-        <div class="row mt-5 ">
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="Full name">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control" placeholder="Email">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft">
-            <input type="text" class="form-control" placeholder="Company Name">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight">
-            <input type="text" class="form-control" placeholder="Address">
-          </div>
-          <div class="col-12 py-2 wow fadeInLeft" data-wow-delay="300ms">
-            <input type="text" class="form-control" placeholder="Contact Number">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInLeft" data-wow-delay="300ms">
-            <input type="date" class="form-control">
-          </div>
-          <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
-            <select name="departement" id="departement" class="custom-select">
-              <option value="general">Food Waste Company 1</option>
-              <option value="cardiology">Food Waste Company 2</option>
-              <option value="dental">Food Waste Company 3</option>
-              <option value="neurology">Food Waste Company 4</option>
-              <option value="orthopaedics">Food Waste Company 5</option>
-            </select>
-          </div>
-          <div class="col-12 py-2 wow fadeInUp" data-wow-delay="300ms">
-            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Enter message.."></textarea>
-          </div>
-        </div>
-
-        <button type="submit" class="btn btn-primary mt-3 wow zoomIn">Submit Request</button>
-      </form>
-    </div>
-  </div>
-
-   <!-- .page-section -->
-
-   <div class="page-section bg-light">
-    <div class="container">
-      <h1 class="text-center wow fadeInUp">Latest News</h1>
-      <div class="row mt-5">
-        <div class="col-lg-4 py-2 wow zoomIn">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-category">
-                <a href="#">Food Waste Problem</a>
-              </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
-              </a>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-2 wow zoomIn">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-category">
-                <a href="#">Food Waste Problem</a>
-              </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
-              </a>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 py-2 wow zoomIn">
-          <div class="card-blog">
-            <div class="header">
-              <div class="post-category">
-                <a href="#">Food Waste Problem</a>
-              </div>
-              <a href="blog-details.html" class="post-thumb">
-                <img src="../assets/img/picture_1.png" alt="">
-              </a>
-            </div>
-            <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Food Waste Problem</a></h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 text-center mt-4 wow zoomIn">
-          <a href="blog.html" class="btn btn-primary">Read More</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
+   
 
 
   <footer class="page-footer">
